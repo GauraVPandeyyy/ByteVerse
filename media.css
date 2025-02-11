@@ -1,0 +1,93 @@
+@media (max-width:768px) {
+
+    .pad {
+        padding-inline: 20px;
+    }
+
+    #navbar .rightNav a {
+        display: none;
+    }
+
+    #navbar .rightNav button {
+        display: block;
+        /* border: 5px solid red; */
+    }
+
+    .landingPage .l-subhead-1 {
+        font-size: 1.2rem;
+        margin-bottom: 0rem;
+    }
+
+    .landingPage .l-subhead-2 {
+        font-size: 3.2rem;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+
+    .service-card {
+        flex-direction: column;
+    }
+
+    .container {
+        gap: 0px;
+    }
+
+    .tm-content {
+        width: 100%;
+    }
+
+    .left-container {
+        justify-self: start;
+        text-align: start;
+        padding-left: 18%;
+    }
+
+    .right-container {
+        justify-self: start;
+        text-align: start;
+        padding-left: 18%;
+    }
+
+    .container img {
+        left: 27px;
+        width: 20%;
+    }
+
+    .timeline::after {
+        left: 42px;
+    }
+
+    .contact-us-form {
+        flex-direction: column;
+    }
+
+    .contact-us-form .left,
+    .contact-us-form .right {
+        width: 100%;
+    }
+
+    .footer-section {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    header{
+    /* height: 100%;
+    width: 100%; */
+    padding-block: 40% 30%;
+    }
+    /* .companies{
+        flex-wrap: wrap;
+    } */
+}
+
+@media (max-width:910px) {
+    #navbar .rightNav a {
+        display: none;
+    }
+
+    #navbar .rightNav button {
+        display: block;
+    }
+}

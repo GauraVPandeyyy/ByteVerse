@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 02</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="animation.css">
+
+</head>
+
+<body>
+
+  <nav class="pad" id="nav">
+    <div id="navbar" class="flex">
+      <div class="logo"><a href="#LandingPage"><img src="assets/img/navbar-logo.svg" alt="navbar"></a></div>
+      <div class="rightNav">
+        <a href="#Services">SERVICES</a>
+        <a href="#Portfolio">PORTFOLIO</a>
+        <a href="#AboutUs">ABOUT</a>
+        <a href="#Team-Section">TEAM</a>
+        <a href="#Contact-us">CONTACT</a>
+        <button type="button" class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" ><i class="fa-solid fa-bars-staggered"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="offcanvas offcanvas-top flex small-nav-main" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body small-nav flex">
+      <a href="#Services">SERVICES</a>
+      <a href="#Portfolio">PORTFOLIO</a>
+      <a href="#AboutUs">ABOUT</a>
+      <a href="#Team-Section">TEAM</a>
+      <a href="#Contact-us">CONTACT</a>
+    </div>
+  </div>
+  <!-- LANDING PAGE -->
+  <header class="pad">
+    <div class="landingPage flex" id="LandingPage">
+      <div class="l-subhead-1">Welcome To Our Studio!</div>
+      <div class="l-subhead-2">It's Nice To Meet You</div>
+      <a href="#Services">Tell Me More</a>
+    </div>
+  </header>
+  <!-- LANDING PAGE -->
+
+  <!-- SERVICES -->
+  <section class="pad" id="Services">
+    <div class="service">
+      <div class="section-header">
+        <h2>services</h2>
+        <h3>Smart Solutions for a Stronger Online Presence!</h3>
+      </div>
+      <div class="service-card flex">
+        <div class="s-card"> <i class="fa-solid fa-cart-shopping"></i>
+          <h4>E-Commerce</h4>
+          <p>Turn clicks into customers! We craft high-performing online stores with seamless checkout experiences, eye-catching designs, and secure payment gateways—because your business deserves the best.</p>
+        </div>
+        <div class="s-card"><i class="fa-solid fa-laptop"></i>
+          <h4>Responsive Design</h4>
+          <p>One website, every device. We make sure your site looks stunning and works flawlessly on desktops, tablets, and smartphones. No pinching, no zooming—just a perfect fit!</p>
+        </div>
+        <div class="s-card"><i class="fa-solid fa-lock"></i>
+          <h4>Web Security</h4>
+          <p>Stay safe, stay secure! We fortify your website with rock-solid security—SSL encryption, firewalls, and proactive defense strategies—to keep hackers and threats at bay.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- SERVICES -->
+
+
+  <!-- PORTFOLIO -->
+
+  <section class="pad" id="Portfolio">
+    <div class="portfolio">
+      <div class="section-header">
+        <h2>PORTFOLIO</h2>
+        <h3>Explore our diverse range of projects showcasing innovation, creativity, and technical excellence.</h3>
+      </div>
+      <div id="port-card-part">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <div class="port-card">
+                <img src="./assets/img/portfolio/1.jpg" class="card-img-top" alt="...">
+                <div class="overlay" data-bs-toggle="modal" data-bs-target="#ThreadModal">
+                  <i class="fa-brands fa-slack"></i>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Model's Landing Page</h5>
+                <p class="card-text">Sleek and Professional Web Presence</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="port-card">
+                <img src="./assets/img/portfolio/2.jpg" class="card-img-top" alt="...">
+                <div class="overlay" data-bs-toggle="modal" data-bs-target="#exploreModal">
+                  <i class="fa-brands fa-slack"></i>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Family Golf</h5>
+                <p class="card-text">A Personal Digital Space for a Golf Champion</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="port-card">
+                <img src="./assets/img/portfolio/3.jpg" class="card-img-top" alt="...">
+                <div class="overlay" data-bs-toggle="modal" data-bs-target="#ThirdModal">
+                  <i class="fa-brands fa-slack"></i>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">CoursEra</h5>
+                <p class="card-text">Empowering Education with an Intuitive Platform</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="port-card">
+                <img src="./assets/img/portfolio/4.jpg" class="card-img-top" alt="...">
+                <div class="overlay" data-bs-toggle="modal" data-bs-target="#FourthModal">
+                  <i class="fa-brands fa-slack"></i>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">UsabilityHub</h5>
+                <p class="card-text">Testing User Experience for Maximum Impact</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="port-card">
+                <img src="./assets/img/portfolio/5.jpg" class="card-img-top" alt="...">
+                <div class="overlay" class="card-img-top" data-bs-toggle="modal" data-bs-target="#FifthModal">
+                  <i class="fa-brands fa-slack"></i>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Rock, Paper & Scissor</h5>
+                <p class="card-text">Fun and Interactive Game Built</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="port-card">
+                <img src="./assets/img/portfolio/6.jpg" class="card-img-top" alt="...">
+                <div class="overlay" class="card-img-top" data-bs-toggle="modal" data-bs-target="#SixModal">
+                  <i class="fa-brands fa-slack"></i>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Coming Soon</h5>
+                <p class="card-text">Exciting New Projects on the Horizon!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </section>
+  <!-- pop up for portfolio -->
+
+  <!-- Thread-Modal first modal-->
+  <div class="modal fade" id="ThreadModal" tabindex="-1" aria-labelledby="threadModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <h1 class="modal-title fs-5" id="threadModalLabel">Project Name</h1> -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body flex">
+          <h1>Landing Page for a Model</h1>
+          <p>Sleek and Professional Web Presence.</p>
+          <img src="assets/img/portfolio-popup/1.png" alt="">
+          <p>This project is a custom-designed landing page for a model, showcasing their portfolio, biography, and services. The design is focused on elegance, with attention to high-quality images and minimalistic design elements. The goal was to create an immersive and professional online presence that would attract potential clients.</p>
+          <p><b>Html</b></p>
+          <p><b>Css</b></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Explore-Modal 2nd model -->
+  <div class="modal fade" id="exploreModal" tabindex="-1" aria-labelledby="ExploreModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <h1 class="modal-title fs-5" id="threadModalLabel">Project Name</h1> -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body flex">
+          <h1>Family Golf</h1>
+          <p>A Personal Digital Space for a Golf Champion.</p>
+          <img src="assets/img/portfolio-popup/2.jpg" alt="">
+          <p>A website designed specifically for a golf player to showcase their achievements, upcoming events, and training. The website offers sections such as bio, stats, videos, and blog posts. With a clean, easy-to-navigate interface, the site aims to engage visitors while highlighting the player’s accomplishments in the sport.</p>
+          <p><b>Html</b></p>
+          <p><b>Css</b></p>
+          <p><b>JavaScript</b></p>
+          <p><b>GSAP</b></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Third-Modal -->
+  <div class="modal fade" id="ThirdModal" tabindex="-1" aria-labelledby="thirdModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <h1 class="modal-title fs-5" id="threadModalLabel">Project Name</h1> -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body flex">
+          <h1>CoursEra</h1>
+          <p>Empowering Education with an Intuitive Platform.</p>
+          <img src="assets/img/portfolio-popup/3.jpg" alt="">
+          <p>This platform allows users to buy and sell online courses. It features a secure payment gateway, course listings with detailed descriptions, and a user-friendly interface. The focus was on ease of use, clean design, and ensuring a smooth transaction process for users.</p>
+          <p><b>Html</b></p>
+          <p><b>Css</b></p>
+          <p><b>Bootstrap</b></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 4th-Modal -->
+  <div class="modal fade" id="FourthModal" tabindex="-1" aria-labelledby="FourthModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <h1 class="modal-title fs-5" id="threadModalLabel">Project Name</h1> -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body flex">
+          <h1>Usability Hub</h1>
+          <p>Testing User Experience for Maximum Impact</p>
+          <img src="assets/img/portfolio-popup/4.jpg" alt="">
+          <p>The Usability Hub is designed to gather feedback on the usability of websites and applications. It features a testing area where users can perform tasks, rate their experience, and provide feedback on usability. This project focuses on improving user interactions and optimizing web interfaces for better performance.</p>
+          <p><b>Html</b></p>
+          <p><b>Css</b></p>
+          <p><b>JavaScript</b></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  5th-Modal -->
+  <div class="modal fade" id="FifthModal" tabindex="-1" aria-labelledby="FifthModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <h1 class="modal-title fs-5" id="threadModalLabel">Project Name</h1> -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body flex">
+          <h1>Rock Paper Scissors Game</h1>
+          <p>Fun and Interactive Game Built with Web Basics</p>
+          <img src="assets/img/portfolio-popup/5.jpg" alt="">
+          <p>A classic game of Rock Paper Scissors built using only HTML, CSS, and JavaScript. The game allows the user to play against the computer with simple animations and dynamic feedback. It’s a fun and interactive way to demonstrate the power of front-end web development.</p>
+          <p><b>Html</b></p>
+          <p><b>Css</b></p>
+          <p><b>JavaScript</b></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 6th-Modal -->
+  <div class="modal fade" id="SixModal" tabindex="-1" aria-labelledby="SixModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <h1 class="modal-title fs-5" id="threadModalLabel">Project Name</h1> -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body flex">
+          <h1>Exciting New Projects on the Horizon!</h1>
+          <p>Stay tuned for something amazing</p>
+          <img src="assets/img/portfolio-popup/6.jpg" alt="">
+          <p>We're constantly working on new and exciting projects that will take your digital experience to the next level. Stay tuned for updates!</p>
+         
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- pop up for portfolio -->
+
+  <!-- Timeline -->
+
+ 
+  <div class="section-header pad" id="AboutUs">
+    <h2>ABOUT</h2>
+    <h3>Our Journey: From Passion to Progress</h3>
+  </div>
+  <div class="timeline pad" id="Timeline">
+    <div class="container">
+      <img src="assets/img/about/1.jpg" alt="">
+      <div class="tm-content left-container">
+        <h4>🌱 2023</h4>
+        <h4>The First Step: Humble Beginnings</h4>
+        <p>Every journey begins with curiosity. 2023 was the year of exploration—dipping our toes into the vast world of technology, understanding the fundamentals, and setting the stage for something bigger. With a hunger for learning, we started grasping the basics of programming, problem-solving, and logical thinking. It was the year that planted the seed for a tech-driven future.</p>
+      </div>
+    </div>
+    <div class="container">
+      <img src="assets/img/about/2.jpg" alt="">
+      <div class="tm-content right-container">
+        <h4>🧠 2024 </h4>
+        <h4>Stepping into DSA & LeetCode</h4>
+        <p>Every expert was once a beginner, and 2024 marked the start of our deep dive into Data Structures and Algorithms. While mastering DSA is a journey, we embraced problem-solving on LeetCode, strengthening our logic and improving our approach to coding challenges. From understanding sorting algorithms to tackling real-world coding problems, we continue to refine our skills, one problem at a time.</p>
+      </div>
+    </div>
+    <div class="container">
+      <img src="assets/img/about/3.jpg" alt="">
+      <div class="tm-content left-container">
+        <h4>💻 2024</h4>
+        <h4>Bringing Ideas to Life: Web Development Begins</h4>
+        <p>Code isn’t just about solving problems—it’s about creating something meaningful. Stepping into the world of web development, we explored front-end and back-end technologies, turning static concepts into dynamic experiences. With HTML, CSS, and JavaScript, we learned the art of crafting user-friendly designs, while backend technologies opened doors to robust, scalable applications. This was the phase where logic met creativity.</p>
+      </div>
+    </div>
+    <div class="container">
+      <img src="assets/img/about/4.jpg" alt="">
+      <div class="tm-content right-container">
+        <h4>🚀 2024-2025</h4>
+        <h4>From Learning to Building: The NeuroDentica Project</h4>
+        <p>Knowledge without application is incomplete. Taking a leap into real-world development, we worked on NeuroDentica.com—building a complete website from scratch. This project taught us the intricacies of backend development with PHP and SQL, database management, security practices, and hosting on Hostinger. From setting up a local XAMPP server to successfully deploying the project, this was the true test of everything we had learned so far.</p>
+      </div>
+    </div>
+    <div class="container">
+      <img src="assets/img/about/5.jpg" alt="image 5!">
+    </div>
+
+  </div>
+
+  <!-- OUR AMAZING TEAM -->
+
+  <section class="pad" id="Team-Section">
+    <div class="service amz-team-section">
+      <div class="section-header">
+        <h2>OUR AMAZING TEAM</h2>
+        <h3>We are Equipped with These Functionalities</h3>
+      </div>
+      <div class="service-card team-section flex ">
+        <div class="team-section-card">
+          <img src="assets/img/team/1.jpg" alt="">
+          <h5>Gaurav Pandey</h5>
+          <p>Full-Stack Enthusiast</p>
+          <a href="https://www.instagram.com/gaura_vp07/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/gaurav-pandey-0987162a0" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="team-section-card">
+          <img src="assets/img/team/2.jpg" alt="">
+          <h5>Shakshi Singh</h5>
+          <p>Creative Developer</p>
+          <a href="https://www.instagram.com/shaksshiiiii/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/shakshi-singh-1a59502a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin" target="_blank"></i></a>
+        </div>
+        <div class="team-section-card">
+          <img src="assets/img/team/3.jpg" alt="">
+          <h5>Pratik Pandey</h5>
+          <p>Tech Explorer</p>
+          <a href="https://www.instagram.com/pratik_pandey002/?hl=en"><i class="fa-brands fa-instagram" target="_blank"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/pratik-pandey-6891a72a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin" target="_blank"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- companies section -->
+  <section class="pad">
+    <div class="companies flex">
+      <img src="assets/img/logos/microsoft.svg" alt="">
+      <img src="assets/img/logos/facebook.svg" alt="">
+      <img src="assets/img/logos/google.svg" alt="">
+      <img src="assets/img/logos/ibm.svg" alt="">
+    </div>
+  </section>
+
+  <!-- contact us -->
+  <section class="pad contact-section" id="Contact-us">
+    <div class="contact-us">
+      <div class="contact-us-header">
+        <h4>CONTACT US</h4>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <form action="https://formspree.io/f/xzzdaeeg"
+      method="POST">
+        <div class="contact-us-form flex">
+          <div class="left">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingInput" placeholder="Your Name" name="name" required>
+              <label for="floatingInput">Your Name*</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email" required>
+              <label for="floatingInput">Email address*</label>
+            </div>
+            <div class="form-floating">
+              <input type="tel" class="form-control" id="floatingPhone" placeholder="Your Phone No." name="phone" required>
+              <label for="floatingPassword">Your Phone*</label>
+            </div>
+          </div>
+          <div class="right">
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" name="subject" id="floatingTextarea2"
+                style="height: 200px"></textarea>
+              <label for="floatingTextarea2">Comments</label>
+            </div>
+          </div>
+        </div>
+        <div class="submit-btn flex">
+          <button type="submit">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="pad">
+    <div class="footer-section flex">
+      <div class="footer-1">Copyright © Your Website 2023</div>
+      <div class="footer-2">
+        <a href="https://www.instagram.com/gaura_vp07/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/gaurav-pandey-0987162a0" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+      <div class="footer-3">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- sripts -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+
+
+  <script>gsap.to("#nav", {
+      backgroundColor: "#282729",
+      duration: 0.5,
+      height: "75px",
+      scrollTrigger: {
+        trigger: "#nav",
+        scroller: "body",
+        // markers:true,
+        start: "top -10%",
+        end: "top -11%",
+        scrub: 1,
+      },
+    });</script>
+
+</body>
+
+</html>
